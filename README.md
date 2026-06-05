@@ -20,9 +20,6 @@ Durante a implementação também foram adicionados testes complementares para c
 * Validação das regras de ordenação por prioridade, bloqueios e data agendada.
 
 O resultado final retorna, para cada coleta analisada, sua elegibilidade para execução, bloqueios identificados, ação sugerida e eventual relacionamento com outra coleta quando caracterizada duplicidade.
-
-com base no deasapio, estou postando a a resqust e response, mas tb quero postar um breve texto sobre a solucao:
-
 ## Request
 
 ```json
