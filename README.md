@@ -1,7 +1,6 @@
 # Interview Backend Eloverde
 
 ## Solução Implementada
-
 A implementação foi desenvolvida seguindo os princípios de separação de responsabilidades (SRP), mantendo cada regra de negócio isolada em componentes específicos para facilitar manutenção, testes e futuras evoluções.
 
 A análise de pré-execução foi dividida em validadores independentes:
@@ -12,6 +11,8 @@ A análise de pré-execução foi dividida em validadores independentes:
 * **SuggestedActionResolver**: responsável por determinar a ação sugerida com base nos bloqueios encontrados.
 * **PreExecutionResultSorter**: responsável por aplicar as regras de ordenação exigidas pelo desafio.
 
+Além da implementação das regras de negócio, toda a solução foi amplamente documentada diretamente no código-fonte. Cada classe, método e decisão relevante possui comentários explicando não apenas o que está sendo feito, mas também os motivos da implementação, as regras de negócio atendidas e as decisões técnicas adotadas. O objetivo foi tornar a solução facilmente compreensível para qualquer desenvolvedor que precise dar manutenção ou evoluir a funcionalidade futuramente.
+
 Durante a implementação também foram adicionados testes complementares para cenários que não estavam totalmente cobertos pela suíte original, incluindo:
 
 * Identificação de coletas duplicadas.
@@ -19,7 +20,10 @@ Durante a implementação também foram adicionados testes complementares para c
 * Combinação de bloqueios de naturezas diferentes.
 * Validação das regras de ordenação por prioridade, bloqueios e data agendada.
 
+O desenvolvimento foi conduzido com foco em legibilidade, manutenibilidade, testabilidade e aderência às regras de negócio descritas no desafio, buscando demonstrar não apenas a implementação funcional da solução, mas também a organização do código, a clareza arquitetural e o raciocínio utilizado durante o processo de desenvolvimento.
+
 O resultado final retorna, para cada coleta analisada, sua elegibilidade para execução, bloqueios identificados, ação sugerida e eventual relacionamento com outra coleta quando caracterizada duplicidade.
+
 ## Request
 
 ```json
